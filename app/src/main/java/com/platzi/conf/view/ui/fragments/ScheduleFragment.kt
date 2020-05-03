@@ -1,38 +1,31 @@
 package com.platzi.conf.view.ui.fragments
 
-
 import android.os.Bundle
-import android.telecom.Conference
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.platzi.conf.R
+import com.platzi.conf.model.Conference
 import com.platzi.conf.view.adapter.ScheduleAdapter
-import com.platzi.conf.view.adapter.ScheduleListener
 import com.platzi.conf.viewmodel.ScheduleViewModel
 import kotlinx.android.synthetic.main.fragment_schedule.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class ScheduleFragment : Fragment(), ScheduleListener {
+class ScheduleFragment : Fragment() {
 
     private lateinit var scheduleAdapter: ScheduleAdapter
     private lateinit var viewModel: ScheduleViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_schedule, container, false)
     }
 
@@ -57,22 +50,15 @@ class ScheduleFragment : Fragment(), ScheduleListener {
         })
 
         viewModel.isLoading.observe(this, Observer<Boolean> {
-            if (it != null)
+            if(it != null)
                 rlBaseSchedule.visibility = View.INVISIBLE
         })
-
     }
 
-    override fun onConferenceClicked(conference: com.platzi.conf.model.Conference, position: Int) {
+    fun onConferenceClicked(conference: Conference, position: Int) {
         val bundle = bundleOf("conference" to conference)
-        findNavController().navigate(R.id.ScheduleDetailFragmentDialog, bundle)
+        findNavController().navigate(R.id.scheduleDetailFragmentDialog, bundle)
     }
 
 }
 
-private fun <T> MutableLiveData<T>.observe(
-    scheduleFragment: ScheduleFragment,
-    observer: Observer<List<Conference>>
-) {
-
-}
