@@ -19,7 +19,9 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="@dimen/cardCornerRadius"
                 app:cardElevation="4dp"
-                android:layout_margin="15dp">
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -28,7 +30,9 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/banner_platzi_conf" />
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/banner_platzi_conf"
+                        android:scaleType="centerCrop"/>
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
@@ -56,7 +60,8 @@
                         android:textColor="@color/colorPrimary"
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
                         android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/marginHomeSubtitulo"/>
+                        android:layout_marginTop="@dimen/marginHomeSubtitulo"
+                        android:layout_marginBottom="10dp"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -75,6 +80,8 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
+                        android:layout_marginTop="1dp"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/platzi_conf_2" />
                     <View
                         android:layout_width="match_parent"
@@ -103,7 +110,8 @@
                         android:textColor="@color/colorPrimary"
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
                         android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/marginHomeSubtitulo"/>
+                        android:layout_marginTop="@dimen/marginHomeSubtitulo"
+                        android:layout_marginBottom="10dp"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -113,7 +121,8 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="@dimen/cardCornerRadius"
                 app:cardElevation="4dp"
-                android:layout_margin="15dp">
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -122,6 +131,8 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
+                        android:layout_marginTop="1dp"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/platzi_conf_3" />
                     <View
                         android:layout_width="match_parent"
@@ -150,7 +161,8 @@
                         android:textColor="@color/colorPrimary"
                         android:layout_marginRight="@dimen/marginHomeSubtitulo"
                         android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                        android:layout_marginTop="@dimen/marginHomeSubtitulo"/>
+                        android:layout_marginTop="@dimen/marginHomeSubtitulo"
+                        android:layout_marginBottom="10dp"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

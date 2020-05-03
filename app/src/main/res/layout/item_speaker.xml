@@ -9,10 +9,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp">
         <ImageView
             android:id="@+id/tvItemSpeakerImage"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
+            android:layout_gravity="center_horizontal"
             android:layout_height="@dimen/altoImageViewHome"
             android:src="@mipmap/ic_launcher"
             android:layout_margin="10dp"/>
