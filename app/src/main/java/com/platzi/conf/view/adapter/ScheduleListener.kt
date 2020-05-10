@@ -1,10 +1,7 @@
 package com.platzi.conf.view.adapter
 
-import com.platzi.conf.model.Conference
+import com.platzi.conf.model.Torneo
 
 interface ScheduleListener {
-    public val rlBaseSchedule: Any
-
-    fun onConferenceClicked(conference: Conference, position: Int)
-    fun onScheduleClicked(conference: Conference, position: Int)
+    fun onTorneoClicked(torneo: Torneo, position: Int)
 }

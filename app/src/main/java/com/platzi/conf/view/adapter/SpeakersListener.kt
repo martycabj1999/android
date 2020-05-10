@@ -1,8 +1,7 @@
 package com.platzi.conf.view.adapter
 
-import com.platzi.conf.model.Speaker
+import com.platzi.conf.model.Team
 
-interface SpeakersListener {
-    fun onConferenceClicked(conference: Speaker, position: Int)
-    fun onSpeakerClicked(speaker: Speaker, position: Int)
+interface TeamsListener {
+    fun onTeamClicked(team: Team, position: Int)
 }

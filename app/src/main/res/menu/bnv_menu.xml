@@ -9,9 +9,9 @@
         android:title="Cronograma"
         android:icon="@drawable/ic_schedule" />
     <item
-        android:id="@+id/navSpeakersFragment"
-        android:title="Expositores"
-        android:icon="@drawable/ic_speakers" />
+        android:id="@+id/navTeamsFragment"
+        android:title="Equipos"
+        android:icon="@drawable/ic_teams" />
     <item
         android:id="@+id/navMapFragment"
         android:title="Mapa"

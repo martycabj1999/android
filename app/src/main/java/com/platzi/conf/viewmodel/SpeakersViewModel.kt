@@ -2,25 +2,25 @@ package com.platzi.conf.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.platzi.conf.model.Speaker
+import com.platzi.conf.model.Team
 import com.platzi.conf.network.Callback
 import com.platzi.conf.network.FirestoreService
 
 
-class SpeakersViewModel: ViewModel() {
+class TeamsViewModel: ViewModel() {
 
     val firestoreService = FirestoreService()
-    var listSpeaker: MutableLiveData<List<Speaker>> = MutableLiveData()
+    var listTeam: MutableLiveData<List<Team>> = MutableLiveData()
     var isLoading = MutableLiveData<Boolean>()
 
     fun refresh() {
-        getSpeakerFromFirebase()
+        getTeamFromFirebase()
     }
 
-    fun getSpeakerFromFirebase() {
-        firestoreService.getSpeakers(object : Callback<List<Speaker>> {
-            override fun onSuccess(result: List<Speaker>?) {
-                listSpeaker.postValue(result)
+    fun getTeamFromFirebase() {
+        firestoreService.getTeams(object : Callback<List<Team>> {
+            override fun onSuccess(result: List<Team>?) {
+                listTeam.postValue(result)
                 processFinished()
             }
 

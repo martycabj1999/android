@@ -37,22 +37,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/shape_parrafo"
-                    android:padding="10dp"
-                    android:layout_marginBottom="10dp">
+                    android:padding="10dp">
 
                     <ImageView
-                        android:id="@+id/ivDetailSpeakerImage"
+                        android:id="@+id/ivDetailTeamImage"
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         android:src="@mipmap/ic_launcher"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="40dp"/>
                     <TextView
-                        android:id="@+id/tvDetailSpeakerName"
+                        android:id="@+id/tvDetailTeamName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Speaker Name"
+                        android:text="Team Name"
                         android:gravity="center_horizontal"
                         android:layout_marginTop="10dp"
                         android:textSize="30sp"
@@ -61,7 +61,7 @@
                         android:layout_marginRight="15dp"
                         android:layout_marginLeft="15dp"/>
                     <TextView
-                        android:id="@+id/tvDetailSpeakerJobtitle"
+                        android:id="@+id/tvDetailTeamJobtitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Job title"
@@ -71,7 +71,7 @@
                         android:layout_marginRight="15dp"
                         android:layout_marginLeft="15dp"/>
                     <TextView
-                        android:id="@+id/tvDetailSpeakerWorkplace"
+                        android:id="@+id/tvDetailTeamWorkplace"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Workplace"
@@ -82,14 +82,14 @@
                         android:layout_marginRight="15dp"
                         android:layout_marginLeft="15dp"/>
                     <ImageView
-                        android:id="@+id/ivDetailSpeakerTwitter"
+                        android:id="@+id/ivDetailTeamTwitter"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/ic_icons_twitter"
                         android:layout_marginTop="10dp"
                         android:layout_gravity="center_horizontal"/>
                     <TextView
-                        android:id="@+id/tvDetailSpeakerBiography"
+                        android:id="@+id/tvDetailTeamBiography"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Lorem ipsum"
